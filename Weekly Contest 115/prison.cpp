@@ -6,64 +6,51 @@ using namespace std;
 class Solution
 {
   public:
-    vector<int> prisonAfterNDays(vector<int> &cells, int N)
+    int findLoop(const vector<int> &cells)
     {
-        int k = 0;
-        vector<vector<int>> a;
-        a.push_back(cells);
+        int period = 0;
+        vector<vector<int>> status;
+        status.push_back(cells);
         while (true)
         {
-            vector<int> tmp(8);
+            vector<int> cntStatus(8);
             for (int i = 1; i <= 6; i++)
             {
-                if (a[k][i - 1] == a[k][i + 1])
-                    tmp[i] = 1;
+                if (status[period][i - 1] == status[period][i + 1])
+                    cntStatus[i] = 1;
                 else
-                    tmp[i] = 0;
+                    cntStatus[i] = 0;
             }
-            tmp[0] = 0;
-            tmp[7] = 0;
-            a.push_back(tmp);
-            k++;
+            cntStatus[0] = 0;
+            cntStatus[7] = 0;
+            status.push_back(cntStatus);
+            period++;
 
-            if (k >= 3 && a[k - 1] == a[1])
+            if (period >= 3 && status[period - 1] == status[1])
                 break;
         }
-        N = (N - 1) % (k - 2) + 1;
+        return period - 2;
+    }
+    vector<int> prisonAfterNDays(vector<int> &cells, int N)
+    {
+        int period = findLoop(cells);
+        N = (N - 1) % period + 1; //mapping
         vector<int> v1(8), v2 = cells;
-        v1[0] = 0;
-        v1[7] = 0;
+        vector<int> cntDayStatus(8), lastDayStatus = cells;
+        cntDayStatus[0] = 0;
+        cntDayStatus[7] = 0;
         for (int i = 1; i <= N; i++)
         {
-            if (i % 2 == 0)
+            for (int j = 1; j <= 6; j++)
             {
-                for (int j = 1; j <= 6; j++)
-                {
-                    if (v1[j - 1] == v1[j + 1])
-                        v2[j] = 1;
-                    else
-                        v2[j] = 0;
-                }
+                if (lastDayStatus[j - 1] == lastDayStatus[j + 1])
+                    cntDayStatus[j] = 1;
+                else
+                    cntDayStatus[j] = 0;
             }
-            else
-            {
-                for (int j = 1; j <= 6; j++)
-                {
-                    if (v2[j - 1] == v2[j + 1])
-                        v1[j] = 1;
-                    else
-                        v1[j] = 0;
-                }
-            }
-            if (i == 1)
-            {
-                v2[0] = 0;
-                v2[7] = 0;
-            }
+            lastDayStatus = cntDayStatus; //go to the next day
         }
-        if (N % 2 == 0)
-            return v2;
-        return v1;
+        return cntDayStatus;
     }
 };
 

@@ -14,7 +14,7 @@ Then I found that there existed a rule that the status of prisons will return to
 
 Finally, I passed the test samples. (But it cost me too much time.)
 
-###### TO DO: refactor the code
+I have refactored the code now.
 
 #### completeTree.cpp
 
@@ -34,4 +34,4 @@ My solution was wrong. Maybe completely wrong :(
 
 the final rank.
 
-##### Last-Modified date: 2018.12.16, 7 p.m.
+##### Last-Modified date: 2018.12.17, 9 a.m.

@@ -16,6 +16,12 @@ Finally, I passed the test samples. (But it cost me too much time.)
 
 ###### TO DO: refactor the code
 
+#### completeTree.cpp
+
+the code for question 2.
+
+Pass, using BFS.
+
 #### slash.cpp
 
 the code for question 3.
@@ -28,4 +34,4 @@ My solution was wrong. Maybe completely wrong :(
 
 the final rank.
 
-##### Last-Modified date: 2018.12.16, 1p.m.
+##### Last-Modified date: 2018.12.16, 7 p.m.

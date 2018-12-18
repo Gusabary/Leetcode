@@ -5,5 +5,7 @@ In the repository are my codes in the leetcode competition.
 
 Weekly Contest 115
 
-##### Last-modified date: 2018.12.16, 12 p.m.
+solved questions
+
+##### Last-modified date: 2018.12.18, 10 p.m.
 

@@ -1,11 +1,11 @@
-# Leetcode-competition
-In the repository are my codes in the leetcode competition.
+# Leetcode
+In the repository are my codes for the [Leetcode](https://leetcode-cn.com/).
 
 ## Directories:
 
-Weekly Contest 115
+Weekly Contest
 
-solved questions
+Question Bank
 
-##### Last-modified date: 2018.12.18, 10 p.m.
+##### Last-modified date: 2018.12.22, 5 p.m.
 

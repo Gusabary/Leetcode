@@ -1,12 +1,12 @@
 ## Directory: Weekly Contest 115
 
-In the directory are my codes in the weekly contest 115.
+In the directory are my codes in the [weekly contest 115](https://leetcode-cn.com/contest/weekly-contest-115).
 
 ### Files:
 
 #### prison.cpp
 
-the code for question 1.
+the code for [question 1](https://leetcode-cn.com/contest/weekly-contest-115/problems/prison-cells-after-n-days/).
 
 At first, I tried to use brute force, whose time complexity is O(n). But I exceeded the time limit.
 
@@ -18,7 +18,7 @@ I have refactored the code now.
 
 #### completeTree.cpp
 
-the code for question 2.
+the code for [question 2](https://leetcode-cn.com/contest/weekly-contest-115/problems/check-completeness-of-a-binary-tree/).
 
 Pass, using BFS.
 
@@ -26,4 +26,4 @@ Pass, using BFS.
 
 the final rank.
 
-##### Last-Modified date: 2018.12.22, 1 p.m.
+##### Last-Modified date: 2018.12.22, 5 p.m.

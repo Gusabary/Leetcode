@@ -8,9 +8,11 @@ In the directory are my codes of solved questions.
 
 the code for problem 921.
 
-I am a little tired today.
+Problems related to parentheses can be solved with `stack` always.
 
-###### TO DO: finish the README.md
+In this problem, I store the top element of the imaginary stack rather than use a real stack so that space complexity is relatively low while the effect is the same.
 
-##### Last-modified date: 2018.12.18 10 p.m.
+Also, there are some rules such as the **current** `(` must be redundant and there cannot exist `(` before any `)` in the redundant parentheses.
+
+##### Last-modified date: 2018.12.22 12 p.m.
 

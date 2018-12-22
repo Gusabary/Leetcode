@@ -22,16 +22,8 @@ the code for question 2.
 
 Pass, using BFS.
 
-#### slash.cpp
-
-the code for question 3.
-
-My solution was wrong. Maybe completely wrong :(
-
-###### TO DO: delete or rewrite the code
-
 #### rank.png
 
 the final rank.
 
-##### Last-Modified date: 2018.12.17, 9 a.m.
+##### Last-Modified date: 2018.12.22, 1 p.m.

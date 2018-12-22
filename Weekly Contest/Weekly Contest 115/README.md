@@ -12,7 +12,7 @@ At first, I tried to use brute force, whose time complexity is O(n). But I excee
 
 Then I found that there existed a rule that the status of prisons will return to the one in the first day after a certain period so no matter how much the N is, it can be mapped into a relatively small range and the time complexity is O(1), maybe.
 
-Finally, I passed the test samples. (But it cost me too much time.)
+Finally, I passed the test cases. (But it cost me too much time.)
 
 I have refactored the code now.
 
@@ -26,4 +26,8 @@ Pass, using BFS.
 
 the final rank.
 
+<<<<<<< HEAD:Weekly Contest/Weekly Contest 115/README.md
 ##### Last-Modified date: 2018.12.22, 5 p.m.
+=======
+##### Last-Modified date: 2018.12.22, 1 p.m.
+>>>>>>> 19607e7a8ce52c29b653b7268d14bb6c8cbfe814:Weekly Contest 115/README.md

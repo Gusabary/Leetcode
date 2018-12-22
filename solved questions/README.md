@@ -14,5 +14,13 @@ In this problem, I store the top element of the imaginary stack rather than use 
 
 Also, there are some rules such as the **current** `(` must be redundant and there cannot exist `(` before any `)` in the redundant parentheses.
 
-##### Last-modified date: 2018.12.22 12 p.m.
+#### 923-threeSum.cpp
+
+the code for problem 923.
+
+half-brutal force.
+
+Time complexity is O(m^3). m is the number of different elements of array A.
+
+##### Last-modified date: 2018.12.22 1 p.m.
 

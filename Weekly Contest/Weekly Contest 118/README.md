@@ -20,7 +20,7 @@ the code for [question 2](https://leetcode-cn.com/contest/weekly-contest-118/pro
 
 I found a rule:
 
-> If `A[i] > A[i-1]`, find a `pos` before `i`, which meets the condition that `A[pos] < A[i]` and `A[pos+1] < A[i]`. That is to say, find an appropriate place for `A[i]`.
+> If `A[i] > A[i-1]`, find a `pos` before `i`, which meets the condition that `A[pos] < A[i]` and `A[pos+1] > A[i]`. That is to say, find an appropriate place for `A[i]`.
 >
 > If `pos` is really found:
 >

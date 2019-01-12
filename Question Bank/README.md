@@ -24,7 +24,7 @@ Time complexity is O(m^3). m is the number of different elements of array A.
 
 #### 662-maxWidthOfBinaryTree.cpp
 
-the code for problem 662
+the code for [problem 662](https://leetcode-cn.com/problems/maximum-width-of-binary-tree/).
 
 using level-order traversal.
 
@@ -32,5 +32,19 @@ Get the position of the most left and right node that isn't `NULL` in each level
 
 Moreover, in my algorithm, the `leftSon` and `rightSon` of `NULL` are both assigned as `NULL` unless there is not **valid** node (that is, the node is not `NULL`) at the left of the current `NULL`. It is a kind of optimization, which can discard many **useless** `NULL` in the left. (**useful** `NULL` means it is between the left and right border so that can contribute to the width)
 
-##### Last-modified date: 2019.1.7 11 a.m.
+#### 934-bridge.cpp
+
+the code for [problem 934](https://leetcode-cn.com/problems/shortest-bridge/).
+
+using BFS.
+
+**Step 1 :** determine the range of the first island.
+
+**Step 2 :** determine the range of the second island.
+
+**Step 3 :** determine the distance of each point from the second island.
+
+**Step 4 :** find the smallest distance in the first island, which is the distance between two islands
+
+##### Last-modified date: 2019.1.12 5 p.m.
 
